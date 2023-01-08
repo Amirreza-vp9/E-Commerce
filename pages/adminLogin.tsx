@@ -82,7 +82,7 @@ const userLogin = () => {
     onSuccess: (res) => {
       console.log(res);
       setCookie("ut", res.data.token, {});
-      router.push("/");
+      router.push("/adminPanel");
     },
     onError: () => {
       setOpenValidationError(true);
